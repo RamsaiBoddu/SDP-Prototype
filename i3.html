@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upgrist Dashboard</title>
+  
+  <!-- Include Google Fonts for the desired style -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* AppBar Styles */
+    .appbar {
+      background-color: white;
+      border-bottom: 1px solid #e0e0e0;
+      box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+      position: static;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      height: 64px;
+    }
+
+    /* Logo and Brand Section */
+    .logo-brand {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-brand img {
+      height: 40px;
+      width: auto;
+      margin-right: 10px;
+    }
+
+    .logo-brand .brand {
+      font-family: 'Fredericka the Great', cursive; /* Using the selected font */
+      color: black;
+      text-decoration: none;
+      font-size: 30px;
+      line-height: 1.0; /* Adjusted line height for vertical alignment */
+      margin-top: -8px;
+    }
+
+    .navbar-menu {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .navbar-menu a {
+      text-decoration: none;
+      color: black;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+    }
+
+    .navbar-menu a:hover {
+      text-decoration: underline;
+    }
+
+    .navbar-menu i {
+      margin-right: 8px;
+    }
+
+    /* User avatar icon */
+    .user-avatar {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .avatar-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    /* Image and Buttons Section */
+    .main-content {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .main-content img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .button-row {
+        margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 120px;
+    }
+
+    .button-row button {
+      background-color: orange;
+      color: white;
+      border: none;
+      padding: 10px 40px;
+      font-size: 16px;
+      border-radius: 9px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button-row button:hover {
+      background-color: darkorange;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .navbar-menu {
+        display: none;
+      }
+
+      .menu-icon {
+        display: block;
+        cursor: pointer;
+      }
+
+      .button-row {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- AppBar -->
+  <div class="appbar">
+    <div class="logo-brand">
+      <!-- Logo Image -->
+      <img src="D:\BTECH\3 1\JFSD\SDP_LOGO.jpg" alt="Logo" />
+      <!-- Brand Name -->
+      <a href="#" class="brand">Upgrist</a>
+    </div>
+    
+    <div class="navbar-menu">
+      <a href="i3.html"><i class="material-icons">home</i>Home</a>
+      <a href="contact-support.html"><i class="material-icons">contact_support</i>Contact</a>
+      <a href="about.html"><i class="material-icons">contact_support</i>About</a>
+      <a href="index1.html"><i class="material-icons">person</i>Logout</a>
+    </div>
+  </div>
+
+  <!-- Main Content Section (Image and Buttons) -->
+  <div class="main-content">
+    <!-- Image -->
+    <img src="C:\Users\Admin\Downloads\enhanced_image.png" alt="Main Image" />
+
+    <!-- Button Row -->
+    <div class="button-row">
+      <button onclick="window.location.href='viewstudents.html';">View Students</button>
+      <button>Update Students</button>
+      <button>Delete Students</button>
+      <button>View Students Grades</button>
+    </div>
+  </div>
+
+  <script>
+    // Toggle the mobile menu visibility
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    }
+
+    // Placeholder function for user avatar menu
+    function toggleUserMenu() {
+      alert("User menu clicked!");
+    }
+  </script>
+
+</body>
+</html>
