@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upgrist - About</title>
+  
+  <!-- Google Fonts for the style -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    /* AppBar Styles */
+    .appbar {
+      background-color: white;
+      border-bottom: 1px solid #e0e0e0;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+      position: static;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      height: 64px;
+    }
+
+    /* Logo and Brand Section */
+    .logo-brand {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-brand img {
+      height: 40px;
+      width: auto;
+      margin-right: 10px;
+    }
+
+    .logo-brand .brand {
+      font-family: 'Roboto', sans-serif;
+      color: black;
+      text-decoration: none;
+      font-size: 28px;
+    }
+
+    /* Navbar Menu */
+    .navbar-menu {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .navbar-menu a {
+      text-decoration: none;
+      color: black;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-menu a:hover {
+      text-decoration: underline;
+    }
+
+    .navbar-menu i {
+      margin-right: 8px;
+    }
+
+    /* About Section */
+    .about-section {
+      margin: 40px auto;
+      max-width: 1000px;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .about-section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .about-section p {
+      text-align: justify;
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .about-section .features {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .about-section .features h3 {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .about-section .features ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .about-section .features ul li {
+      font-size: 16px;
+      color: #444;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+    }
+
+    .about-section .features ul li i {
+      margin-right: 8px;
+      color: #28a745;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .navbar-menu {
+        display: none;
+      }
+
+      .menu-icon {
+        display: block;
+        cursor: pointer;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- AppBar -->
+  <div class="appbar">
+    <div class="logo-brand">
+      <img src="SDP_LOGO.jpg" alt="Logo" />
+      <a href="#" class="brand">Upgrist</a>
+    </div>
+    <div class="navbar-menu">
+      <a href="i1.html"><i class="material-icons">home</i>Home</a>
+      <a href="contact-support.html"><i class="material-icons">contact_support</i>About</a>
+      <a href="login.html"><i class="material-icons">person</i>Login</a>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="about-section">
+    <h2>About Upgrist</h2>
+    <p>Upgrist is an advanced platform designed for educational institutions and students alike to manage and analyze student data effectively. Our mission is to empower educators and students with the tools they need to monitor, track, and improve academic performance using data-driven insights.</p>
+    <p>Our platform simplifies the process of managing student analytics by offering features like real-time data visualization, performance tracking, and personalized reports. Whether you're a teacher looking to track your students' progress or a student aiming for continuous improvement, Upgrist is your one-stop solution.</p>
+
+    <div class="features">
+      <h3>Key Features of Upgrist:</h3>
+      <ul>
+        <li><i class="material-icons">analytics</i>Data Visualization: Interactive dashboards to track student performance metrics.</li>
+        <li><i class="material-icons">school</i>Academic Reports: Customizable reports that provide insights into individual and group performance.</li>
+        <li><i class="material-icons">assessment</i>Performance Tracking: Track progress across multiple subjects and over time.</li>
+        <li><i class="material-icons">insert_chart</i>Real-time Analytics: Get updated analytics on student attendance, grades, and engagement.</li>
+        <li><i class="material-icons">group</i>Collaborative Tools: Facilitate collaboration between teachers, students, and parents for improved communication.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2024 Upgrist. All rights reserved.</p>
+  </div>
+
+</body>
+</html>
