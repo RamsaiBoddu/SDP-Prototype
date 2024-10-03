@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BUS DEJAVU</title>
+
+  <!-- Include Google Fonts for the desired style -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* AppBar Styles */
+    .appbar {
+      background-color: white;
+      border-bottom: 1px solid #e0e0e0;
+      box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+      position: static;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      height: 64px;
+    }
+
+    /* Logo and Brand Section */
+    .logo-brand {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-brand img {
+      height: 40px;
+      width: auto;
+      margin-right: 10px;
+    }
+
+    .logo-brand .brand {
+      font-family: 'Fredericka the Great', cursive;
+      color: black;
+      text-decoration: none;
+      font-size: 30px;
+      line-height: 1.0;
+      margin-top: -8px;
+    }
+
+    .navbar-menu {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .navbar-menu a {
+      text-decoration: none;
+      color: black;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+    }
+
+    .navbar-menu a:hover {
+      text-decoration: underline;
+    }
+
+    .navbar-menu i {
+      margin-right: 8px;
+    }
+
+    /* Responsive Menu */
+    .menu-icon {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .navbar-menu {
+        display: none;
+      }
+
+      .menu-icon {
+        display: block;
+        cursor: pointer;
+      }
+
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 64px;
+        right: 20px;
+        background-color: white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+        flex-direction: column;
+      }
+
+      .dropdown-menu a {
+        padding: 10px;
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      .dropdown-menu a:hover {
+        background-color: #f5f5f5;
+      }
+    }
+
+    /* Card Layout Styles */
+    .students-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .student-card {
+      background-color: white;
+      width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .student-card:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .student-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .student-card-body {
+      padding: 20px;
+    }
+
+    .student-card h3 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    .student-card p {
+      margin: 8px 0;
+      color: #555;
+    }
+
+    .student-card .email {
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- AppBar -->
+  <div class="appbar">
+    <div class="logo-brand">
+      <!-- Logo Image -->
+      <img src="SDP_LOGO.jpg" alt="Logo" />
+      <!-- Brand Name -->
+      <a href="#" class="brand">upgrist</a>
+    </div>
+
+    <div class="navbar-menu">
+      <a href="i2.html"><i class="material-icons">home</i>Home</a>
+      <a href="contact-support.html"><i class="material-icons">contact_support</i>About</a>
+      <a href="i1.html"><i class="material-icons">person</i>Logout</a>
+    </div>
+  </div>
+
+  <!-- View Students Page - Cards -->
+  <div class="students-container">
+    <!-- Student Card 1 -->
+    <div class="student-card">
+      <img src="https://via.placeholder.com/300x180" alt="Student Image">
+      <div class="student-card-body">
+        <h3>John Doe</h3>
+        <p>Age: 20</p>
+        <p>Course: Computer Science</p>
+        <p class="email">john.doe@example.com</p>
+      </div>
+    </div>
+
+    <!-- Student Card 2 -->
+    <div class="student-card">
+      <img src="https://via.placeholder.com/300x180" alt="Student Image">
+      <div class="student-card-body">
+        <h3>Jane Smith</h3>
+        <p>Age: 22</p>
+        <p>Course: Mechanical Engineering</p>
+        <p class="email">jane.smith@example.com</p>
+      </div>
+    </div>
+
+    <!-- Student Card 3 -->
+    <div class="student-card">
+      <img src="https://via.placeholder.com/300x180" alt="Student Image">
+      <div class="student-card-body">
+        <h3>Mike Johnson</h3>
+        <p>Age: 21</p>
+        <p>Course: Civil Engineering</p>
+        <p class="email">mike.johnson@example.com</p>
+      </div>
+    </div>
+
+    <!-- Student Card 4 -->
+    <div class="student-card">
+      <img src="https://via.placeholder.com/300x180" alt="Student Image">
+      <div class="student-card-body">
+        <h3>Emily Davis</h3>
+        <p>Age: 23</p>
+        <p>Course: Electrical Engineering</p>
+        <p class="email">emily.davis@example.com</p>
+      </div>
+    </div>
+
+    <!-- Student Card 5 -->
+    <div class="student-card">
+      <img src="https://via.placeholder.com/300x180" alt="Student Image">
+      <div class="student-card-body">
+        <h3>Sarah Brown</h3>
+        <p>Age: 19</p>
+        <p>Course: Information Technology</p>
+        <p class="email">sarah.brown@example.com</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Toggle the mobile menu visibility
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    }
+
+    // Placeholder function for user avatar menu
+    function toggleUserMenu() {
+      alert("User menu clicked!");
+    }
+  </script>
+
+</body>
+
+</html>
